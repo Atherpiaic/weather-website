@@ -36,13 +36,13 @@ app.get("/help", (req, res) => {
   });
 });
 
-app.get("/about", (req, res) => {
-  res.render("About", {
-    title: "About me",
-    name: "Ather",
-    footer: "footer About",
-  });
-});
+// app.get("/about", (req, res) => {
+//   res.render("About", {
+//     title: "About me",
+//     name: "Ather",
+//     footer: "footer About",
+//   });
+// });
 
 app.get("/weather", (req, res) => {
   const address = req.query.address;
